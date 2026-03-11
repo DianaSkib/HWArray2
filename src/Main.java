@@ -62,5 +62,17 @@ public class Main {
         }
         System.out.println("inputArray4: " + java.util.Arrays.toString(inputArray4));
         System.out.println("outputArray4: " + outputArray4);
+
+        /// task 5
+
+        int[] inputArray5 = {13468, -3269, 0, 13888, 13000};
+        int outputArray5 = 0;
+        for (int profit : inputArray5) {
+            if (profit > 0) {
+                outputArray5++;
+            }
+        }
+        System.out.println("inputArray5: " + java.util.Arrays.toString(inputArray5));
+        System.out.println("outputArray5 (количество рентабельных месяцев): " + outputArray5);
     }
 }
