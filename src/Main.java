@@ -51,7 +51,7 @@ public class Main {
 
         /// task 4
 
-        int[] inputArray4 = {1500, 2300, -500, 3100, 1800};
+        int[] inputArray4 = {2300, 64230, -9316, 4682, 1359};
         boolean outputArray4;
         outputArray4 = true;
         for (int balance : inputArray4) {
