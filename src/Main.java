@@ -38,5 +38,15 @@ public class Main {
         }
         System.out.println("inputArray2 (выплаты сотрудникам, руб.): " + Arrays.toString(inputArray2));
         System.out.println("outputArray2 (налог 13 %, руб.): " + Arrays.toString(outputArray2));
+
+        ///task 3
+
+        int[] inputArray3 = {4500, 6200, 3800, 7100, 5000};
+        boolean[] outputArray3 = new boolean[inputArray3.length];
+        for (int i = 0; i < inputArray3.length; i++) {
+            outputArray3[i] = inputArray3[i] > 5000;
+        }
+        System.out.println("inputArray3: " + java.util.Arrays.toString(inputArray3));
+        System.out.println("outputArray3: " + java.util.Arrays.toString(outputArray3));
     }
 }
