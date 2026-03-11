@@ -41,12 +41,26 @@ public class Main {
 
         ///task 3
 
-        int[] inputArray3 = {4500, 6200, 3800, 7100, 5000};
+        int[] inputArray3 = {3000, 4800, 5000, 7900, 8300};
         boolean[] outputArray3 = new boolean[inputArray3.length];
         for (int i = 0; i < inputArray3.length; i++) {
-            outputArray3[i] = inputArray3[i] > 5000;
+            outputArray3[i] = inputArray3[i] > 3000;
         }
         System.out.println("inputArray3: " + java.util.Arrays.toString(inputArray3));
         System.out.println("outputArray3: " + java.util.Arrays.toString(outputArray3));
+
+        /// task 4
+
+        int[] inputArray4 = {1500, 2300, -500, 3100, 1800};
+        boolean outputArray4;
+        outputArray4 = true;
+        for (int balance : inputArray4) {
+            if (balance < 0) {
+                outputArray4 = false;
+                break;
+            }
+        }
+        System.out.println("inputArray4: " + java.util.Arrays.toString(inputArray4));
+        System.out.println("outputArray4: " + outputArray4);
     }
 }
