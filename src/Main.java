@@ -27,5 +27,16 @@ public class Main {
         outputArray1[3] = average;
         System.out.println("inputArray1: " + Arrays.toString(inputArray1));
         System.out.println("outputArray1: " + Arrays.toString(outputArray1));
+
+        /// task2
+
+        int[] inputArray2 = {64861, 4548, 58300, 78931, 48519};
+        double[] outputArray2 = new double[inputArray2.length];
+        final double taxRate = 0.13;
+        for (int i = 0; i < inputArray2.length; i++) {
+            outputArray2[i] = inputArray2[i] * taxRate;
+        }
+        System.out.println("inputArray2 (выплаты сотрудникам, руб.): " + Arrays.toString(inputArray2));
+        System.out.println("outputArray2 (налог 13 %, руб.): " + Arrays.toString(outputArray2));
     }
 }
